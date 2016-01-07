@@ -49,7 +49,7 @@
 
 CGFloat const NKOPickerViewGradientViewHeight           = 40.f;
 CGFloat const NKOPickerViewGradientTopMargin            = 20.f;
-CGFloat const NKOPickerViewDefaultMargin                = 10.f;
+CGFloat const NKOPickerViewDefaultMargin                = 0.f;
 CGFloat const NKOPickerViewBrightnessIndicatorWidth     = 16.f;
 CGFloat const NKOPickerViewBrightnessIndicatorHeight    = 48.f;
 CGFloat const NKOPickerViewCrossHairshWidthAndHeight    = 38.f;
@@ -106,7 +106,7 @@ CGFloat const NKOPickerViewCrossHairshWidthAndHeight    = 38.f;
                                         CGRectGetHeight(self.frame) - NKOPickerViewGradientViewHeight - NKOPickerViewDefaultMargin - NKOPickerViewGradientTopMargin);
     
     self.gradientView.frame = CGRectMake(NKOPickerViewDefaultMargin,
-                                         CGRectGetHeight(self.frame) - NKOPickerViewGradientViewHeight - NKOPickerViewDefaultMargin,
+                                         CGRectGetHeight(self.frame) - NKOPickerViewGradientViewHeight + 10,
                                          CGRectGetWidth(self.frame) - (NKOPickerViewDefaultMargin*2),
                                          NKOPickerViewGradientViewHeight);
     
@@ -291,7 +291,7 @@ CGFloat const NKOPickerViewCrossHairshWidthAndHeight    = 38.f;
         self->_gradientView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
         
         self->_gradientView.layer.borderWidth = 1.f;
-        self->_gradientView.layer.cornerRadius = 6.f;
+        self->_gradientView.layer.cornerRadius = 0.f;
         self->_gradientView.layer.borderColor = [self _defaultTintColor].CGColor;
         self->_gradientView.layer.masksToBounds = YES;
     }

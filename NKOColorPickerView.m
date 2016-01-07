@@ -49,9 +49,9 @@
 
 CGFloat const NKOPickerViewGradientViewHeight           = 40.f;
 CGFloat const NKOPickerViewGradientTopMargin            = 20.f;
-CGFloat const NKOPickerViewDefaultMargin                = 10.f;
+CGFloat const NKOPickerViewDefaultMargin                = 30.f;
 CGFloat const NKOPickerViewBrightnessIndicatorWidth     = 16.f;
-CGFloat const NKOPickerViewBrightnessIndicatorHeight    = 48.f;
+CGFloat const NKOPickerViewBrightnessIndicatorHeight    = 40.f;
 CGFloat const NKOPickerViewCrossHairshWidthAndHeight    = 38.f;
 
 @interface NKOColorPickerView()

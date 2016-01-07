@@ -49,7 +49,7 @@
 
 CGFloat const NKOPickerViewGradientViewHeight           = 40.f;
 CGFloat const NKOPickerViewGradientTopMargin            = 20.f;
-CGFloat const NKOPickerViewDefaultMargin                = 0.f;
+CGFloat const NKOPickerViewDefaultMargin                = 10f;
 CGFloat const NKOPickerViewBrightnessIndicatorWidth     = 16.f;
 CGFloat const NKOPickerViewBrightnessIndicatorHeight    = 48.f;
 CGFloat const NKOPickerViewCrossHairshWidthAndHeight    = 38.f;
@@ -106,7 +106,7 @@ CGFloat const NKOPickerViewCrossHairshWidthAndHeight    = 38.f;
                                         CGRectGetHeight(self.frame) - NKOPickerViewGradientViewHeight - NKOPickerViewDefaultMargin - NKOPickerViewGradientTopMargin);
     
     self.gradientView.frame = CGRectMake(NKOPickerViewDefaultMargin,
-                                         CGRectGetHeight(self.frame) - NKOPickerViewGradientViewHeight + 10,
+                                         CGRectGetHeight(self.frame) - NKOPickerViewGradientViewHeight,
                                          CGRectGetWidth(self.frame) - (NKOPickerViewDefaultMargin*2),
                                          NKOPickerViewGradientViewHeight);
     
